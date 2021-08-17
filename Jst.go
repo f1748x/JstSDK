@@ -3,7 +3,7 @@ package Jst
 import (
 	"fmt"
 
-	util "./util"
+	"github.com/f1748x/JstSDK/util"
 )
 
 func PrintlnNow() {
