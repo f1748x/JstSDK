@@ -1,8 +1,9 @@
-package Jst
+package main
 
 import (
 	"fmt"
-	"jstsdk/JstSDK/util"
+
+	util "./util"
 )
 
 func PrintlnNow() {
@@ -10,4 +11,5 @@ func PrintlnNow() {
 }
 func GetOrder() {
 	util.GetOrderList()
+	util.SendOrder()
 }
