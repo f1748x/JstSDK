@@ -23,18 +23,18 @@ go get -u github.com/f1748x/JstSDK
 ### 对照表:
 <table>
         <tr>
-            <th>聚水潭methods</th>
+            <th>聚水潭</th>
             <th>JstSDK</th>
             <th>接口名称</th>
         </tr>
         <tr>
             <th>order.signle.query</th>
-            <th>Order_Signle_Query</th>
+            <th>Jst.Order_Signle_Query</th>
             <th>获取订单</th>
         </tr>
          <tr>
             <th>shops.query</th>
-            <th>Shops_Query</th>
-            <th>获取店铺3</th>
+            <th>Jst.Shops_Query</th>
+            <th>获取店铺</th>
 </tr>
     </table>
