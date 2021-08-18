@@ -20,10 +20,8 @@ go get -u github.com/f1748x/JstSDK
 	data := Jst.Order_Signle_Query(tmap)//string
 
 ```
-| 聚水潭 | SDK |
-
-| :-----: | :-----: |
-
-| shops.query  | Jst.Shops_Query |
-
-| order.signle.query | Jst.Order_Signle_Query |
+    | 水果        | 价格    |  数量  |
+    | --------   | -----:   | :----: |
+    | 香蕉        | $1      |   5    |
+    | 苹果        | $1      |   6    |
+    | 草莓        | $1      |   7    |
