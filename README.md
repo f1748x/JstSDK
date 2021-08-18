@@ -35,6 +35,6 @@ go get -u github.com/f1748x/JstSDK
          <tr>
             <th>shops.query</th>
             <th>Shops_Query</th>
-            <th>获取店铺</th>
+            <th>获取店铺3</th>
         </tr>
     </table>
