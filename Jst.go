@@ -38,8 +38,18 @@ func NewClient(Jpartnerid, Jpartnerkey, Token string) (jmap *JstParams) {
 }
 
 // orders.single.query
-func (jmap *JstParams) Order_Signle_Query(tmap map[string]interface{}) string {
-	jmap.Method = "orders.single.query"
+// func (jmap *JstParams) Order_Signle_Query(tmap map[string]interface{}) string {
+// 	jmap.Method = "orders.single.query"
+// 	ts := time.Now().Unix()
+// 	timeTs := fmt.Sprintf("%d", ts)
+// 	sign := jmap.Md532(timeTs)
+// 	jmap.Sign = sign //%s?method=%s
+// 	nUrl := fmt.Sprintf("%s?method=%s%s%s%s%s", jmap.Host, jmap.Method, jmap.Url, timeTs, "&sign=", sign)
+// 	res := http.Post(nUrl, tmap, "application/json")
+// 	return res
+// }
+func (jmap *JstParams) Send(method string, tmap map[string]interface{}) string {
+	jmap.Method = method
 	ts := time.Now().Unix()
 	timeTs := fmt.Sprintf("%d", ts)
 	sign := jmap.Md532(timeTs)

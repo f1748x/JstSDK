@@ -16,8 +16,8 @@ go get -u github.com/f1748x/JstSDK
 	tmap["status"] = "Sent"
 	tmap["modified_begin"] = "2021-03-1 00:00:00"
 	tmap["modified_end"] = "2021-03-7 00:00:00"
-
-	data := Jst.Order_Signle_Query(tmap)//string
+//Jst.Send("method",data)
+	data := Jst.Send("orders.single.query",tmap)//string
 
 ```
 ### 对照表:
