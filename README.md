@@ -7,5 +7,16 @@ go get -u github.com/f1748x/JstSDK
 * 1.找到你项目的go.mod文件
 * 2.打开找到``github.com/f1748x/JstSDK v0.0.3`` 如要更新版本至 ``github.com/f1748x/JstSDK v0.0.4``
 ```go 
+系统参数
+    Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
+// 请求参数
+    tmap := make(map[string]interface{})
+	tmap["page_size"] = 50
+	tmap["page_index"] = 1
+	tmap["status"] = "Sent"
+	tmap["modified_begin"] = "2021-03-1 00:00:00"
+	tmap["modified_end"] = "2021-03-7 00:00:00"
+
+	data := Jst.Order_Signle_Query(tmap)//string
 
 ```
