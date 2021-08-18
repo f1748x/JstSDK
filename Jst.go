@@ -22,17 +22,16 @@ type JstParams struct {
 	OrderSingleQuery func(method string)
 }
 
-func NewClient(Jpartnerid, Jpartnerkey, Method, Token string) (jmap *JstParams) {
+func NewClient(Jpartnerid, Jpartnerkey, Token string) (jmap *JstParams) {
 
 	jmap = &JstParams{}
 	jmap.Jpartnerid = Jpartnerid
-	jmap.Method = Method
 	jmap.Token = Token
 	jmap.Jpartnerkey = Jpartnerkey
 
 	jmap.Host = "https://open.erp321.com/api/open/query.aspx"
 
-	jmap.Url = fmt.Sprintf("%s?method=%s&partnerid=%s&token=%s&ts=", jmap.Host, jmap.Method, jmap.Jpartnerid, jmap.Token)
+	jmap.Url = fmt.Sprintf("&partnerid=%s&token=%s&ts=", jmap.Jpartnerid, jmap.Token)
 
 	return
 
@@ -44,8 +43,8 @@ func (jmap *JstParams) Order_Signle_Query(tmap map[string]interface{}) string {
 	ts := time.Now().Unix()
 	timeTs := fmt.Sprintf("%d", ts)
 	sign := jmap.Md532(timeTs)
-	jmap.Sign = sign
-	nUrl := fmt.Sprintf("%s%s%s%s", jmap.Url, timeTs, "&sign=", sign)
+	jmap.Sign = sign //%s?method=%s
+	nUrl := fmt.Sprintf("%s?method=%s%s%s%s%s", jmap.Host, jmap.Method, jmap.Url, timeTs, "&sign=", sign)
 	res := http.Post(nUrl, tmap, "application/json")
 	return res
 }
