@@ -1,0 +1,3 @@
+github.com/15902124763/go-base v0.0.0-20200211084302-aa4e0016441c h1:rYyRSspGStmxYcW9NGzYhLWOG8YMIg+fFapC1t/H9As=
+github.com/15902124763/go-base v0.0.0-20200211084302-aa4e0016441c/go.mod h1:EBz+H8SL6t14O/Mv7Exrpn7YxSv8a4Ysr9XeDXTZfFI=
+github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
