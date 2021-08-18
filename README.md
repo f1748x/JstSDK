@@ -20,3 +20,10 @@ go get -u github.com/f1748x/JstSDK
 	data := Jst.Order_Signle_Query(tmap)//string
 
 ```
+|                       对照表                         |
+
+|  :------------------:  | :------------------:  |
+
+| shops.query  | Jst.Shops_Query |
+
+| order.signle.query  | Jst.Order_Signle_Query |
