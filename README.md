@@ -46,12 +46,12 @@ data :=Jst.Order_Signle_Query("2021-03-1 00:00:00","2021-03-7 00:00:00")
             <th>order.signle.query</th>
             <th>Jst.Order_Signle_Query()</th>
             <th>获取订单</th>
-            <th>modified_begin,modified_end,...opt</th>
+            <th>args ...string</th>
         </tr>
          <tr>
             <th>shops.query</th>
             <th>Jst.Shops_Query()</th>
             <th>获取店铺</th>
-            <th>modified_begin,modified_end,...opt</th>
+            <th>args ...string</th>
 </tr>
     </table>
