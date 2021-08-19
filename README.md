@@ -10,6 +10,9 @@ go get -u github.com/f1748x/JstSDK
 ```go 
 第一个版本简易版可直接使用
 1.系统参数
+import (
+    ""github.com/f1748x/JstSDK""
+)
     Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
 2.请求参数
     tmap := make(map[string]interface{})
@@ -28,6 +31,9 @@ go get -u github.com/f1748x/JstSDK
 * 例子:
 调用聚水潭订单查询接口: orders.single.query
 ```go
+import (
+    ""github.com/f1748x/JstSDK""
+)
 Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
 data :=Jst.Order_Signle_Query("2021-03-1 00:00:00","2021-03-7 00:00:00")
 //订单数据
