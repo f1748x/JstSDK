@@ -24,6 +24,14 @@ go get -u github.com/f1748x/JstSDK
 ```
 ------------------------------------------------------------
 第二版开发中.....
+例子:
+调用聚水潭订单查询接口: orders.single.query
+```go
+Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
+data :=Jst.Order_Signle_Query("2021-03-1 00:00:00","2021-03-7 00:00:00")
+//订单数据
+```
+
 ### 对照表:
 ###### 暂不可用
 <table>
