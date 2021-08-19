@@ -32,14 +32,14 @@ go get -u github.com/f1748x/JstSDK
             <th>参数说明</th>
         </tr>
         <tr>
-            <th>order.signle.query()</th>
+            <th>order.signle.query</th>
             <th>Jst.Order_Signle_Query()</th>
             <th>获取订单</th>
             <th>modified_begin,modified_end,...opt</th>
         </tr>
          <tr>
             <th>shops.query</th>
-            <th>Jst.Shops_Query</th>
+            <th>Jst.Shops_Query()</th>
             <th>获取店铺</th>
             <th>modified_begin,modified_end,...opt</th>
 </tr>
