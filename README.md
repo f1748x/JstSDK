@@ -2,14 +2,14 @@
 ###### golang 版本 聚水潭SDK 请使用第一版
 #### 下载包
 ```go
-go get -u github.com/Thomas997/JstSDK
+go get -u github.com/f1748x/JstSDK
 ```
 #### 如果你的版本太旧了 请及时更新sdk到最新版本
 * 1.找到你项目的go.mod文件
-* 2.打开找到``github.com/Thomas997/JstSDK v0.0.3`` 如要更新版本至 ``github.com/Thomas997/JstSDK v0.0.4``
+* 2.打开找到``github.com/f1748x/JstSDK v0.0.3`` 如要更新版本至 ``github.com/f1748x/JstSDK v0.0.4``
 ```go 
 import (
-    ""github.com/Thomas997/JstSDK""
+    ""github.com/f1748x/JstSDK""
 )
     Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
 
@@ -30,7 +30,7 @@ import (
 调用聚水潭订单查询接口: orders.single.query
 ```go
 import (
-    ""github.com/Thomas997/JstSDK""
+    ""github.com/f1748x/JstSDK""
 )
 Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
 data :=Jst.Order_Signle_Query("2021-03-1 00:00:00","2021-03-7 00:00:00")
