@@ -39,19 +39,19 @@ data :=Jst.Order_Signle_Query("2021-03-1 00:00:00","2021-03-7 00:00:00")
         <tr>
             <th>聚水潭</th>
             <th>JstSDK</th>
-            <th>接口名称</th>
             <th>参数说明</th>
+            <th>接口名称</th>
         </tr>
         <tr>
             <th>order.signle.query</th>
             <th>Jst.Order_Signle_Query()</th>
-            <th>获取订单</th>
             <th>args ...string</th>
+            <th>获取订单</th>
         </tr>
          <tr>
             <th>shops.query</th>
             <th>Jst.Shops_Query()</th>
-            <th>获取店铺</th>
             <th>args ...string</th>
+            <th>获取店铺</th>
 </tr>
     </table>
