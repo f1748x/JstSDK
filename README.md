@@ -1,5 +1,5 @@
-### 托马斯牌聚水潭SDK
-###### golang 版本 聚水潭SDK
+### 托马斯牌聚水潭SDK 第一版
+###### golang 版本 聚水潭SDK 请使用第一版
 #### 下载包
 ```go
 go get -u github.com/f1748x/JstSDK
