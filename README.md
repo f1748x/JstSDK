@@ -29,6 +29,7 @@ import (
 * 例子:
 调用聚水潭订单查询接口: orders.single.query
 ```go
+//star 数量到20 我就发布第二版
 import (
     ""github.com/f1748x/JstSDK""
 )
