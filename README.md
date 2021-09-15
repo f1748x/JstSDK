@@ -12,7 +12,7 @@ go get -u github.com/f1748x/JstSDK
 * 2.打开找到``github.com/f1748x/JstSDK v0.0.3`` 如要更新版本至 ``github.com/f1748x/JstSDK v0.0.4``
 ```go 
 import (
-    ""github.com/f1748x/JstSDK""
+    "github.com/f1748x/JstSDK"
 )
     Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
 
@@ -35,7 +35,7 @@ import (
 调用聚水潭订单查询接口: orders.single.query
 ```go
 import (
-    ""github.com/f1748x/JstSDK""
+    "github.com/f1748x/JstSDK"
 )
 Jst := jst.NewClient(Config.Jpartnerid, Config.Jpartnerkey, Config.Jtoken)
 data :=Jst.Order_Signle_Query("2021-03-1 00:00:00","2021-03-7 00:00:00")
